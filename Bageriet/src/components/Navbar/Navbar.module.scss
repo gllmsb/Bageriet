@@ -1,0 +1,61 @@
+@use '../../style/variables' as *;
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #56728a, #698ba6); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; 
+  padding: 1rem 0;
+  z-index: 1000;
+  font-family: $font1;
+
+  .nav-container {
+    width: 40%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    gap: 20px; 
+  }
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0; 
+  }
+
+  .logo-wrapper a {
+    font-size: 2rem; 
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #fff;
+    font-family: 'Cursive', sans-serif;
+    font-family: $font2;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 1rem;
+  }
+}
