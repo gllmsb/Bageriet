@@ -7,7 +7,7 @@
     overflow: hidden;
   }
   
-  .slider-container {
+  .sliderContainer {
     position: relative;
     width: 100%;
     height: 100%;
@@ -20,7 +20,7 @@
     transition: transform 0.5s ease-in-out;
   }
   
-  .slider-image {
+  .sliderImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -34,14 +34,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: $words;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    font-weight: 200;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     padding: 10px;
   }
   
-  .slider-controls {
+  .sliderControls {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -51,24 +52,25 @@
     z-index: 10;
   }
   
-  .prev-btn,
-  .next-btn {
+  .prevBtn,
+  .nextBtn {
     background: transparent;
     border: none;
     color: #ffffff55;
     font-size: 2rem;
     cursor: pointer;
     padding: 10px;
+    margin: 16px;
     transition: opacity 0.3s ease;
   }
   
-  .prev-btn:hover,
-  .next-btn:hover {
+  .prevBtn:hover,
+  .nextBtn:hover {
     color: #ffffff88;
   }
   
-  .prev-btn:focus,
-  .next-btn:focus {
+  .prevBtn:focus,
+  .nextBtn:focus {
     outline: none;
   }
   

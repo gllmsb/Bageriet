@@ -11,15 +11,14 @@ export const Header = () => {
     { img: slide2, caption: 'Frisk bageri hver dag' },
     { img: slide3, caption: 'Smagen af hjemmebag' }
   ];
-
+  
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
-    );
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
   };
 
   useEffect(() => {
@@ -31,20 +30,20 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles['slider-container']}>
+      <div className={styles['sliderContainer']}>
         <div className={styles.slider}>
           <img
             src={slides[currentIndex].img}
             alt="Bageri"
-            className={styles['slider-image']}
+            className={styles['sliderImage']}
           />
           <div className={styles.caption}>{slides[currentIndex].caption}</div>
 
-          <div className={styles['slider-controls']}>
-            <button onClick={prevSlide} className={styles['prev-btn']}>
+          <div className={styles['sliderControls']}>
+            <button onClick={prevSlide} className={styles['prevBtn']}>
               &#10094;
             </button>
-            <button onClick={nextSlide} className={styles['next-btn']}>
+            <button onClick={nextSlide} className={styles['nextBtn']}>
               &#10095;
             </button>
           </div>
