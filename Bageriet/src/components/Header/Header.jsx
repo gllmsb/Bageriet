@@ -12,6 +12,9 @@ export const Header = () => {
     { img: slide3, caption: 'Smagen af hjemmebag' }
   ];
   
+//**The modulus operator (%) in this code ensures that the index value wraps around when it goes out of bounds */
+//** If prevIndex is 2 and slides.length is 3, then 2 + 1 = 3. But 3 % 3 = 0, so the next slide is the first one.*/
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };

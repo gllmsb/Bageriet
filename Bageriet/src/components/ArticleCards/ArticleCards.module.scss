@@ -1,0 +1,56 @@
+@use '../../style/variables' as *;
+
+.articleContainer {
+    width: 50%; 
+    margin: 0 auto; 
+  }
+  
+  .articles {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+  }
+  
+  .articleCard {
+    margin-top: 20px;
+    width: 20%; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 5rem;
+  }
+  
+  .articleCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .articleImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
+    margin-bottom: 15px;
+  }
+  
+  .cardContent {
+    margin-top: 15px;
+  }
+  
+  .articleSubtitle {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: $font1;
+    color: $title;
+    text-transform: uppercase;
+  }
+  
+  .articleText {
+    font-size: 0.8rem;
+    color: $title;
+    margin-top: 10px;
+    font-family: $font1;
+  }
+  
