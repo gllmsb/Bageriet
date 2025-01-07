@@ -7,7 +7,7 @@ export const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <main style={{ paddingTop: '85px' }}>
+      <main>
         <Outlet />
       </main>
       <Footer />

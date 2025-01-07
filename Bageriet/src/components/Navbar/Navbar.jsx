@@ -1,25 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from './Navbar.module.scss';
+import { NavLink } from 'react-router-dom';
+import style from './Navbar.module.scss';
 
 export const Navbar = () => {
   return (
-    <nav className={styles.nav}>
-      <div className={styles['nav-container']}>
-        <ul className={styles.left}>
-          <li><Link to="/">Forside</Link></li>
-          <li><Link to="/products">Produkter</Link></li>
-        </ul>
-
-        <div className={styles['logo-wrapper']}>
-          <Link to="/" className={styles.logo}>Bageriet</Link>
-        </div>
-
-        <ul className={styles.right}>
-          <li><Link to="/contact">Kontakt</Link></li>
-          <li><Link to="/login">Login</Link></li>
-        </ul>
-      </div>
+    <nav className={style.navbar}>
+      <ul>
+        <li>
+          <NavLink to="/">FORSIDE</NavLink>
+        </li>
+        <li>
+          <NavLink to="/products">PRODUKTER</NavLink>
+        </li>
+        <li>
+          <h1>bageriet</h1>
+        </li>
+        <li>
+          <NavLink to="/contact">KONTAKT</NavLink>
+        </li>
+        <li>
+          <NavLink to="/login">LOGIN</NavLink>
+        </li>
+      </ul>
     </nav>
   );
 };
