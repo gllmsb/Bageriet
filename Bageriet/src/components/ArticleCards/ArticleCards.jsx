@@ -4,6 +4,8 @@ import article1 from '../../assets/images/article.jpg';
 import article2 from '../../assets/images/article2.jpg';
 import article3 from '../../assets/images/article3.jpg';
 
+//! can you make this props when u have time after the code along.
+
 export const ArticleCards = () => {
   const articles = [
     {

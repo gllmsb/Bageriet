@@ -1,0 +1,116 @@
+@use '../../style/variables' as *;
+
+.newArrivalsSection {
+  padding: 20px;
+}
+
+.textContainer {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: $font2;
+  font-weight: 200;
+  color: $title;
+}
+
+.sectionDescription {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  font-family: $font1;
+  color: $title;
+  margin-top: 10px;
+}
+
+.productSectionWrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.productSectionContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 400px;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+}
+
+.productCard:hover {
+  transform: scale(1.03);
+}
+
+.productImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.productInfo {
+  text-align: center;
+  margin-top: 10px;
+  font-family: $font1;
+}
+
+.productCategory {
+  font-size: 1rem;
+  color: #888;
+}
+
+.productTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+  font-family: $font1;
+  color: $title;
+  text-transform: uppercase;
+}
+
+.productDescription {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: $font1;
+}
+
+
+.productButton {
+  background-color: #fafafa;
+  color: #333;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: $font1;
+}
+
+.productComments {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 5px;
+}
+
+.productButton:hover {
+  background-color: $light-gray;
+}
