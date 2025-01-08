@@ -3,7 +3,6 @@ import { IoIosArrowUp } from "react-icons/io";
 import styles from './Footer.module.scss';
 
 export const Footer = () => {
-  // Function to scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
