@@ -2,37 +2,75 @@
 
 .footer {
     background-color: $footer;
+    color: $words;
+    text-align: center;
     margin-top: 10rem;
+    position: relative;
   }
   
   .footerContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 60%;
+    margin: 0 auto;
   }
   
   .footerTitle {
     font-size: 2rem;
-    font-weight: bold;
-    font-family: $font2;
     font-weight: 200;
-    color: white;
+    font-family: $font2;
+    padding-top: 20px;
   }
   
   .footerDescription {
-    font-size: 0.8rem;
-    margin-top: -0.5rem;
-    color: #bbb;
-    width: 30%; 
+    width: 50%;
     text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    font-family: $font1;
+    color: $light-gray;
+  }
+  
+  .footerBottom {
+    background-color: $footer2;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: $light-gray;
     font-family: $font1;
   }
   
-  .footerCopyright {
-    background-color: $footer2; 
-    padding: 10px 0;
-    text-align: center;
-    color: #888;
-    font-size: 0.9rem;
+  .backToTopButton {
+    position: absolute;
+    bottom: 205px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $light-gray;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .backToTopButton:hover {
+    background-color: $title;
+    animation: bounce 1s infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-5px); 
+    }
+    100% {
+      transform: translateX(-50%) translateY(0); 
+    }
   }
   
